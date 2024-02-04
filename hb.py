@@ -23,25 +23,15 @@ def hb(num):
             m = 0
             j = 0
             for j in range(num):
-                if image1[j] in ans1 and image1[k] in ans1:
+                if image1[j] in ans1:
                     index1 = ans1.index(image1[j])
-                    index2 = ans1.index(image1[k])
                     
-                    if index1 == index2 == j:
+                    if index1 == j:
                         n += 1
                     
-                    elif index1 == j and index2 == k and j != k:
-                        n += 2
                     
-                    elif index1 == j and index2 != k and index1 != index2:
-                        n += 1 
-                        m += 1 
-                    
-                    elif index1 != j and index2 == k and index1 != index2:
-                        n += 1 
-                        m += 1 
                         
-                    else:
+                    elif index1 != j:
                         m += 1
                         
                 else:
