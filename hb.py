@@ -38,6 +38,8 @@ def hb(num):
                     pass
             print(f'{n}ヒット, {m}ブローだよ!')
     
-    print(f'答えは{int(ans)}でした！')                    
+    print(f'答えは{int(ans)}でした！')     
+    print('mergeの練習')     
+                   
         
 hb(3)
